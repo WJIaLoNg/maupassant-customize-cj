@@ -1,0 +1,12 @@
+# 配置详情请参考：https://docs.halo.run/zh/developer-guide/theme/config-files
+id: maupassant-customize-cj
+name: maupassant-customize-cj
+author:
+  name: wangjialong
+  website: https://chenji.site
+description: 基于maupassant主题进行定制化修改
+logo: http://cdn.sep.cc/avatar/e2d1f9c5da125994d7bf02c691e3124a?s=256&d=identicon
+website: https://github.com/WJIaLoNg/maupassant-customize-cj
+repo: https://github.com/WJIaLoNg/maupassant-customize-cj
+version: 1.0.0
+require: 1.4.2

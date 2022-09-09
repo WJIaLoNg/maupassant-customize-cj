@@ -1,0 +1,93 @@
+
+/*目录盒子固定*/
+#catalogBox {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2rem;
+}
+
+/*目录卡片的高度*/
+#catalogBox .card {
+    max-height: 90vh;
+}
+
+/*目录超出盒子的处理*/
+#catalogs {
+    max-height: 85vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+#catalogs::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+/*LG宽度以下样式*/
+@media (max-width: 992px) {
+
+    /*目录盒子*/
+    #catalogBox {
+        position: fixed;
+        z-index: 40;
+        width: 85%;
+        right: -85%;
+        top: 0;
+    }
+
+    /*目录卡片*/
+    #catalogBox .card {
+        max-height: 100vh;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    /*目录蒙版，初始化隐藏*/
+    #catalogOverBox {
+        display: none;
+        position: fixed;
+        z-index: 30;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .6);
+    }
+}
+
+/*目录行高*/
+#catalogs p {
+    line-height: 1rem;
+}
+
+/*目录的链接样式*/
+#catalogs p a {
+    color: #333333;
+    text-decoration: none;
+    position: relative;
+}
+
+/*目录链接前面的修饰*/
+#catalogs p a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.2rem;
+    left: -1.125rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-left: 1px solid #e7e7eb;
+    border-bottom: 1px solid #e7e7eb;
+}
+
+/*目录链接前面的修饰*/
+#catalogs p a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.5500rem;
+    left: -1.125rem;
+    height: 1.25rem;
+    width: 0.75rem;
+    border-left: 1px solid #e7e7eb;
+}
